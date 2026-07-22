@@ -12,6 +12,7 @@ vi.mock("cloudflare:workers", () => ({
 }));
 
 import * as addRankTrackingKeywords from "./add-rank-tracking-keywords";
+import * as contentOptimizationTools from "./content-optimization-tools";
 import * as createProject from "./create-project";
 import * as createRankTracker from "./create-rank-tracker";
 import * as dataforseoResearchTools from "./dataforseo-research-tools";
@@ -39,6 +40,7 @@ import * as whoami from "./whoami";
 
 const toolExports: Record<string, unknown> = {
   ...addRankTrackingKeywords,
+  ...contentOptimizationTools,
   ...createProject,
   ...createRankTracker,
   ...dataforseoResearchTools,

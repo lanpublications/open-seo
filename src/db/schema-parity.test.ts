@@ -9,6 +9,7 @@ import * as sqliteApp from "./app.schema";
 import * as sqliteProjectContext from "./project-context.schema";
 import * as sqliteReports from "./reports.schema";
 import * as sqliteReportTemplates from "./report-templates.schema";
+import * as sqliteContentOptimization from "./content-optimization.schema";
 import * as sqliteAudit from "./audit.schema";
 import * as sqliteSam from "./sam.schema";
 import * as sqliteAuth from "./better-auth-schema";
@@ -20,6 +21,7 @@ import * as pgApp from "./pg/app.schema";
 import * as pgProjectContext from "./pg/project-context.schema";
 import * as pgReports from "./pg/reports.schema";
 import * as pgReportTemplates from "./pg/report-templates.schema";
+import * as pgContentOptimization from "./pg/content-optimization.schema";
 import * as pgAudit from "./pg/audit.schema";
 import * as pgSam from "./pg/sam.schema";
 import * as pgAuth from "./pg/better-auth-schema";
@@ -153,6 +155,7 @@ const sqliteAppTables = tablesFrom(
   sqliteProjectContext,
   sqliteReports,
   sqliteReportTemplates,
+  sqliteContentOptimization,
   sqliteAudit,
   sqliteSam,
   sqliteBilling,
@@ -165,6 +168,7 @@ const pgAppTables = tablesFrom(
   pgProjectContext,
   pgReports,
   pgReportTemplates,
+  pgContentOptimization,
   pgAudit,
   pgSam,
   pgBilling,

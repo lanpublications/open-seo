@@ -85,6 +85,10 @@ import {
   deleteSiteAuditTool,
   listSiteAuditsTool,
 } from "@/server/mcp/tools/site-audit-cleanup-tools";
+import {
+  getContentScanTool,
+  runContentScanTool,
+} from "@/server/mcp/tools/content-optimization-tools";
 import { whoamiTool } from "@/server/mcp/tools/whoami";
 
 type ToolSchema = z.ZodType | z.ZodRawShape;
@@ -234,6 +238,8 @@ export function createOpenSeoMcpServer(authProps: McpProps) {
   register(listReportTemplatesTool);
   register(saveReportTemplateTool);
   register(deleteReportTemplateTool);
+  register(runContentScanTool);
+  register(getContentScanTool);
 
   return server;
 }
